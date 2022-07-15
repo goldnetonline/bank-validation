@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    background-color: $pageBg;
+    justify-content: center;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+    color: $primary;
+}
+
+.btn-theme {
+    color: #fff;
+    background-color: darken($primary, 20);
+    border-color: lighten($primary, 80);
+
+    &:hover {
+        background-color: $brown;
+        border-color: lighten($brown, 80);
+    }
+    &:disabled {
+        background-color: darken($primary, 20);
+        border-color: lighten($primary, 80);
+    }
+}
+
+#main-wrapper {
+    @include contentBox;
+    background-color: white;
+    padding: 20px;
+    width: 85%;
+    max-width: 720px;
+    align-self: center;
+    margin-top: -10%;
+}

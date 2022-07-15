@@ -1,0 +1,44 @@
+/*
+ * File: _variables.scss
+ * Project: bank-validaion
+ * File Created: Tuesday, 13th November 2018 1:47:58 pm
+ * Author: Temitayo Bodunrin (temitayo@camelcase.co)
+ * -----
+ * Last Modified: Friday, 15th July 2022 11:43:48 am
+ * Modified By: Temitayo Bodunrin (temitayo@camelcase.co)
+ * -----
+ * Copyright 2022, CamelCase Technologies Ltd
+ */
+
+$pageBg: rgba(230, 230, 230, 0.4);
+
+$lightGray: $pageBg;
+$mediumGray: darken($pageBg, 40);
+$deepGray: darken($pageBg, 80);
+
+$primary: rgb(192, 180, 96);
+$brown: rgb(31, 26, 23);
+
+$bodyColor: #666;
+$black: #000000;
+$lblack: #333333;
+$lwhite: #dddddd;
+
+$link-color: $primary;
+
+@mixin boxShadow {
+    border: 0;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+@mixin smallTitle {
+    font-weight: 200;
+    color: $brown;
+}
+
+@mixin contentBox {
+    box-shadow: 0 0.1rem 0.4rem 0 rgba(0, 0, 0, 0.1);
+    padding: 0px 20px 20px 20px;
+    border-radius: 0.3rem;
+}
+
